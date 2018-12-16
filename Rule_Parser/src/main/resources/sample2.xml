@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<query>
+    <select all="false">
+        <attributes>
+            <attribute as="custId">A.customerId</attribute>
+            <attribute as="latency">A.timestamp - B.timestamp</attribute>
+        </attributes>
+    </select>
+    <insertInto>CombinedEvent</insertInto>
+    <filter>A.txnId = B.txnId</filter>
+    <from></from>
+</query>

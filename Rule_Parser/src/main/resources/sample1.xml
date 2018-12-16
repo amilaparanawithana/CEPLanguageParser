@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<querys>
+    <connection>
+        <hostName>sdsd</hostName>
+        <port>1</port>
+        <queueManager>ss</queueManager>
+        <channel>dd</channel>
+    </connection>
+</querys>
