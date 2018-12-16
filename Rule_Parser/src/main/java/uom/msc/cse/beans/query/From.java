@@ -1,45 +1,20 @@
 package uom.msc.cse.beans.query;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlValue;
+import javax.xml.bind.annotation.*;
+import java.util.List;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 public class From {
 
-    @XmlAttribute
-    private String as;
+    @XmlElementWrapper(name = "streams")
+    @XmlElement(name = "stream")
+    private List<Stream> streams;
 
-    @XmlValue
-    String value;
-
-
-    public From() {
+    public List<Stream> getStreams() {
+        return streams;
     }
 
-    public From(String value) {
-        this.value = value;
-    }
-
-    public From(String as, String value) {
-        this.as = as;
-        this.value = value;
-    }
-
-    public String getAs() {
-        return as;
-    }
-
-    public void setAs(String as) {
-        this.as = as;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value = value;
+    public void setStreams(List<Stream> streams) {
+        this.streams = streams;
     }
 }

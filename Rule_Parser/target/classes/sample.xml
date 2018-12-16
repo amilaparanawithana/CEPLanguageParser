@@ -9,18 +9,37 @@
             <function func="avg" as="avgTemp">temp</function>
         </functions>
     </select>
-    <fromStream>samplefromstream</fromStream>
-    <filter>condition</filter>
-    <window func="time">
-        <parameters>
-            <parameter>para1</parameter>
-            <parameter>para2</parameter>
-        </parameters>
-    </window>
+
+    <from>
+        <streams>
+            <stream as="st1">
+                <name>st1</name>
+                <window func="time">
+                    <parameters>
+                        <parameter>para1</parameter>
+                        <parameter>para2</parameter>
+                    </parameters>
+                </window>
+                <!--<filter>stream condision</filter>-->
+            </stream>
+
+            <stream as="st2">
+                <name>st2</name>
+                <window func="length">
+                    <parameters>
+                        <parameter>para1</parameter>
+                    </parameters>
+                </window>
+                <!--<filter>stream2condision</filter>-->
+            </stream>
+        </streams>
+    </from>
+    <where>whereCondision</where>
     <group-by>grp1</group-by>
     <having>having1</having>
     <insertInto>insert-stream</insertInto>
 </query>
+
 
 
 

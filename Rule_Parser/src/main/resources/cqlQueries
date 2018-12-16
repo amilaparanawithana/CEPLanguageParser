@@ -1,0 +1,9 @@
+SELECT SUM(P.cost)
+FROM Auctions AS A, Purchases [RANGE 1 DAY] AS P WHERE A.auction_id = P.auction_id
+AND A.seller = "John"; AND P.buyer = "Luke";
+
+
+SELECT A.seller , MAX(P.cost)
+FROM Auctions [PARTITION BY A.seller ROWS 10] AS A,
+Purchases AS P
+WHERE A.auction_id = P.auction_id GROUP BY A.seller;

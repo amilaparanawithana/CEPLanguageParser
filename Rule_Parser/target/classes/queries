@@ -1,4 +1,4 @@
-esper
+//esper
 
 
 insert into CombinedEvent
@@ -49,3 +49,22 @@ from StockTickEvent(symbol='IBM').win:length(10)
 where volume > 1000
 group by tickDataFeed
 having stddev(price) > 0.8
+
+// siddhi
+
+from samplefromstream[condition]#window.time(para1,para2) select atr1 as attr1o , atr2 as attr2o, avg(temp) as avgTemp group by grp1 having having1 insert into insert-stream
+
+from TempStream[temp > 30.0]#window.time(1 min) as T
+  join RegulatorStream[isOn == false]#window.length(1) as R
+  on T.roomNo == R.roomNo
+select T.roomNo, R.deviceID, 'start' as action
+insert into RegulatorActionStream;
+
+from TempStream#window.time(10 min)
+select avg(temp) as avgTemp, roomNo
+group by roomNo
+having avgTemp > 30
+insert into AlertStream;
+
+select tick.symbol from StockTick.win:time(10) as tick, News.win:time(10) as news
+where news.symbol = tick.symbol

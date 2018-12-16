@@ -22,12 +22,10 @@ public class Query {
     private String groupBy;
     @XmlElement(name = "having", type = String.class)
     private String having;
-    @XmlElement(name = "filter", type = String.class)
-    private String filter;
-    @XmlElement(name = "window")
-    private Window window;
     @XmlElement(name = "from")
     private From from;
+    @XmlElement(name = "where")
+    private String where;
 
     public Select getSelect() {
         return select;
@@ -61,27 +59,19 @@ public class Query {
         this.having = having;
     }
 
-    public String getFilter() {
-        return filter;
-    }
-
-    public void setFilter(String filter) {
-        this.filter = filter;
-    }
-
-    public Window getWindow() {
-        return window;
-    }
-
-    public void setWindow(Window window) {
-        this.window = window;
-    }
-
     public From getFrom() {
         return from;
     }
 
     public void setFrom(From from) {
         this.from = from;
+    }
+
+    public String getWhere() {
+        return where;
+    }
+
+    public void setWhere(String where) {
+        this.where = where;
     }
 }

@@ -1,10 +1,7 @@
 package uom.msc.cse.impl;
 
 import uom.msc.cse.api.EsperConverter;
-import uom.msc.cse.beans.query.Attribute;
-import uom.msc.cse.beans.query.From;
-import uom.msc.cse.beans.query.Query;
-import uom.msc.cse.beans.query.Select;
+import uom.msc.cse.beans.query.*;
 import uom.msc.cse.exceptions.ParserException;
 import uom.msc.cse.util.QueryKeyWords;
 import uom.msc.cse.util.QueryUtil;
@@ -90,31 +87,39 @@ public class EsperConverterImpl implements EsperConverter {
         select.setAttributes(attributes);
         query.setSelect(select);
 
-        // group by
-        if(esperQuery.contains(" group by ")) {
-            String groupByPortion = QueryUtil.getStringBetweenEPLBreakers(esperQuery,"group by");
-            query.setGroupBy(groupByPortion.trim());
+        //from
+        if(esperQuery.contains(" from ")) {
+            From from = new From();
+            String fromString = QueryUtil.getStringBetweenEPLBreakers(esperQuery,"from");
+            List<Stream> streams = new ArrayList<>();
+            if(fromString.contains(",")) {
+                List<String> fullFrom = Arrays.asList(fromString.split(","));
+                fullFrom.forEach(fromBlk -> {
+                    Stream stream = new Stream();
+                    setFromStream(fromBlk, stream);
+                    streams.add(stream);
+                });
+            } else {
+                Stream stream = new Stream();
+                setFromStream(fromString, stream);
+                streams.add(stream);
+            }
+
+            from.setStreams(streams);
+            query.setFrom(from);
         }
 
         //where - filter
         if(esperQuery.contains(" where ")) {
             String whereByPortion = QueryUtil.getStringBetweenEPLBreakers(esperQuery,"where");
-            query.setFilter(whereByPortion.trim());
+            query.setWhere(whereByPortion.trim());
         }
 
-        //from
-        if(esperQuery.contains(" from ")) {
-            String fromPortion = QueryUtil.getStringBetweenEPLBreakers(esperQuery,"from");
-            From from = new From();
-            if(fromPortion.contains(".")) {
-                from.setValue(fromPortion.split("\\.")[0].trim());
-            }
-            if(fromPortion.contains("as")) {
-                from.setAs(fromPortion.split("as")[1].trim());
-            }
-            query.setFrom(from);
+        // group by
+        if(esperQuery.contains(" group by ")) {
+            String groupByPortion = QueryUtil.getStringBetweenEPLBreakers(esperQuery,"group by");
+            query.setGroupBy(groupByPortion.trim());
         }
-
 
         return QueryUtil.convertQueryToXML(query);
     }
@@ -133,26 +138,38 @@ public class EsperConverterImpl implements EsperConverter {
         QueryUtil.setInsertInto(query.getInsertInto(), queryString).append(QueryKeyWords.SPACE);
         // set select
         QueryUtil.setSelect(query.getSelect(), queryString);
+
         // set from
         From from = query.getFrom();
-        QueryUtil.setFrom(from, queryString).append(QueryKeyWords.SPACE);
 
-        //filter
-        if (query.getFilter() != null) {
-            queryString.setLength(queryString.length() - 1);
-            queryString.append("(").append(query.getFilter()).append(")").append(QueryKeyWords.SPACE);
-        }
-        // window
-        if (query.getWindow() != null) {
-            queryString.setLength(queryString.length() - 1);
-            queryString.append(".win:").append(query.getWindow().getFunc()).append("(");
+        if(query.getFrom()!=null) {
+            queryString.append("from ");
 
-            query.getWindow().getParameters().forEach(parameter -> {
-                queryString.append(parameter.getValue()).append(",");
+            query.getFrom().getStreams().forEach( stream -> {
+                queryString.append(stream.getName());
+                Window window = stream.getWindow();
+                if(window != null) {
+                    queryString.append(".").append("win").append(":").append(window.getFunc());
+                    queryString.append("(");
+                    window.getParameters().forEach( param -> {
+                        queryString.append(param.getValue()).append(",");
+                    });
+                    queryString.setLength(queryString.length() -1);
+                    queryString.append(")");
+                }
+                if(stream.getAs() != null) {
+                    queryString.append(" ").append(stream.getAs()).append(",");
+                }
             });
-            queryString.setLength(queryString.length() - 1);
-            queryString.append(")").append(QueryKeyWords.SPACE);
         }
+
+        queryString.setLength(queryString.length() - 1);
+
+        // where
+        if (query.getWhere() != null && !query.getWhere().isEmpty()) {
+            queryString.append(" where ").append(query.getWhere()).append(QueryKeyWords.SPACE);
+        }
+
         // group by
         if (query.getGroupBy() != null) {
             QueryUtil.setGroupBy(query.getGroupBy(), queryString).append(QueryKeyWords.SPACE);
@@ -163,5 +180,34 @@ public class EsperConverterImpl implements EsperConverter {
         }
         return queryString.toString();
 
+    }
+
+
+    private void setFromStream(String fromBlk, Stream stream) {
+
+        if(fromBlk.contains(".")) {
+            stream.setName(fromBlk.split("\\.")[0].trim());
+        }
+        if(fromBlk.contains("win:")) {
+            Window window = new Window();
+            window.setFunc(fromBlk.split("win:")[1].split("\\(")[0].trim());
+            List<Parameter> windowParams = new ArrayList<>();
+            String parametersStrin = fromBlk.split("\\(")[1].split("\\)")[0];
+
+            if(parametersStrin.contains(",")) {
+                Arrays.asList(parametersStrin.split(",")).forEach(param -> {
+                    windowParams.add(new Parameter(param));
+                });
+                window.setParameters(windowParams);
+            } else {
+                windowParams.add(new Parameter(parametersStrin));
+                window.setParameters(windowParams);
+            }
+            stream.setWindow(window);
+        }
+
+       if(fromBlk.split("\\)").length > 1) {
+           stream.setAs(fromBlk.split("\\)")[1].trim());
+       }
     }
 }

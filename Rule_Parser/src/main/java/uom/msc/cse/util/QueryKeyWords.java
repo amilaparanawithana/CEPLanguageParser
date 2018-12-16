@@ -36,7 +36,7 @@ public interface QueryKeyWords {
     String SUM = "sum";
     String COUNT = "count";
 
-    List<String> breakingKeyWords = Stream.of(GROUP_BY, HAVING, INSERT_INTO,TERMINATOR).collect(Collectors.toList());
+    List<String> breakingKeyWords = Stream.of(GROUP_BY, HAVING, INSERT_INTO,SELECT,TERMINATOR).collect(Collectors.toList());
 
     List<String> eplBreakingKeyWords = Stream.of(GROUP_BY, HAVING, INSERT_INTO, SELECT, FROM, WHERE, TERMINATOR).collect(Collectors.toList());
 

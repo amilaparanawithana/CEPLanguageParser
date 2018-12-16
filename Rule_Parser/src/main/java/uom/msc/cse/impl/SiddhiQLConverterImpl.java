@@ -73,23 +73,37 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
 
         StringBuilder queryString = new StringBuilder();
         // from
-        QueryUtil.setFrom(query.getFrom(), queryString).append(QueryKeyWords.SPACE);
-        // filter
-        if (query.getFilter() != null) {
-            queryString.setLength(queryString.length() - 1);
-            queryString.append("[").append(query.getFilter()).append("]").append(QueryKeyWords.SPACE);
-        }
-        // window
-        if (query.getWindow() != null) {
-            queryString.setLength(queryString.length() - 1);
-            queryString.append("#window.").append(query.getWindow().getFunc()).append("(");
+        queryString.append("from ");
+        query.getFrom().getStreams().forEach(stream -> {
+            queryString.append(stream.getName());
+            if (stream.getFilter() != null && !stream.getFilter().isEmpty()) {
+                queryString.append("[" + stream.getFilter() + "]");
+            }
+            if (stream.getWindow() != null) {
+                queryString.append("#window.").append(stream.getWindow().getFunc()).append("(");
 
-            query.getWindow().getParameters().forEach(parameter -> {
-                queryString.append(parameter.getValue()).append(",");
-            });
-            queryString.setLength(queryString.length() - 1);
-            queryString.append(")").append(QueryKeyWords.SPACE);
+                stream.getWindow().getParameters().forEach(parameter -> {
+                    queryString.append(parameter.getValue()).append(",");
+                });
+                queryString.setLength(queryString.length() - 1);
+                queryString.append(")").append(QueryKeyWords.SPACE);
+            }
+
+            if (stream.getAs() != null && (!stream.getAs().isEmpty())) {
+                queryString.append(QueryKeyWords.SPACE).append(QueryKeyWords.AS).append(QueryKeyWords.SPACE).append(stream.getAs());
+            }
+
+            queryString.append(QueryKeyWords.SPACE).append(QueryKeyWords.COMMA);
+
+        });
+
+        queryString.setLength(queryString.length() - 1);
+
+        //on
+        if (!query.getWhere().isEmpty()) {
+            queryString.append(QueryKeyWords.SPACE).append("on").append(QueryKeyWords.SPACE).append(query.getWhere()).append(QueryKeyWords.SPACE);
         }
+
         // select
         QueryUtil.setSelect(query.getSelect(), queryString);
         // group by
@@ -107,50 +121,41 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
     }
 
     public String SiddhiQLToXML(String sql) throws ParserException {
+
         Query query = new Query();
-        List<String> splitList =  Arrays.asList(sql.split(" "));
 
         //fromstream
-        int fromIndx = splitList.indexOf(QueryKeyWords.FROM);
-        String stringAfterFrom = splitList.get(fromIndx + 1);
+        From from = new From();
+        List<Stream> streams = new ArrayList<>();
+        String fromString = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql, "from");
+        if (fromString.contains("join")) {
 
-        String fromStream;
-        if(stringAfterFrom.contains("[")) {
-            fromStream = splitList.get(fromIndx + 1).split("\\[")[0];
-        } else {
-            fromStream = splitList.get(fromIndx + 1);
-        }
-        query.setFrom(new From(fromStream));
-
-        // filter
-        if(stringAfterFrom.contains("[")) {
-            String filterString = splitList.get(fromIndx + 1).split("\\[")[1].split("\\]")[0];
-            query.setFilter(filterString);
-        } else if(splitList.get(fromIndx + 2).startsWith("[")) {
-            query.setFilter(splitList.get(fromIndx + 2).split("\\[")[1].split("\\]")[0]);
-        }
-
-        //window
-        if(sql.contains("#window")) {
-            String windowFunc = sql.split("#window.")[1].split(" ")[0].split("\\(")[0];
-            Window window = new Window();
-            window.setFunc(windowFunc);
-            String windowParams = sql.split("#window.")[1].split("\\(")[1].split("\\)")[0];
-            List<Parameter> paramList = new ArrayList<>();
-            Arrays.asList(windowParams.split(",")).forEach( a -> {
-                paramList.add(new Parameter(a));
+            List<String> fullFrom = Arrays.asList(fromString.split("join"));
+            fullFrom.forEach(fromBlk -> {
+                Stream stream = new Stream();
+                setFromStream(fromBlk, stream);
+                streams.add(stream);
             });
-            window.setParameters(paramList);
-            query.setWindow(window);
+        } else {
+            Stream stream = new Stream();
+            setFromStream(fromString, stream);
+            streams.add(stream);
         }
+
+        from.setStreams(streams);
+        query.setFrom(from);
+
+        // on
+        String onPortion = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql, "on");
+        query.setWhere(onPortion.trim());
 
         //select
-        if(sql.contains("select")) {
-            String selectPortion = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql,"select");
+        if (sql.contains("select")) {
+            String selectPortion = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql, "select");
             List<Attribute> attributes = new ArrayList<>();
             Arrays.asList(selectPortion.split(",")).forEach(a -> {
                 Attribute at = new Attribute();
-                if(a.contains("as")) {
+                if (a.contains("as")) {
                     at.setAttribute(a.split("as")[0]);
                     at.setAs(a.split("as")[1].trim());
                 } else {
@@ -162,9 +167,9 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
 
             List<Function> funcList = new ArrayList<>();
             // aggregate functions of select
-            QueryKeyWords.aggFuncs.forEach( func -> {
-                if(selectPortion.contains(func)) {
-                    String s = selectPortion.split(func+ "\\(")[1];
+            QueryKeyWords.aggFuncs.forEach(func -> {
+                if (selectPortion.contains(func)) {
+                    String s = selectPortion.split(func + "\\(")[1];
                     Function f = new Function();
                     f.setFunc(func);
                     f.setField(s.split("\\)")[0]);
@@ -174,19 +179,55 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
             });
 
             query.setSelect(new Select(attributes, funcList));
-
         }
 
-
-
-
         //group by
-        if(sql.contains("group by")) {
-            String selectPortion = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql,"group by");
+        if (sql.contains("group by")) {
+            String selectPortion = QueryUtil.SiddhigetStringBetweenSiddhiBreakers(sql, "group by");
             query.setGroupBy(selectPortion.trim());
         }
 
 
         return QueryUtil.convertQueryToXML(query);
     }
+
+
+    private void setFromStream(String fromBlk, Stream stream) {
+        // name
+        if (fromBlk.contains("[")) {
+            stream.setName(fromBlk.split("\\[")[0].trim());
+        } else if (fromBlk.contains("#window")) {
+            stream.setName(fromBlk.split("#window")[0].trim());
+        } else if (fromBlk.contains("as")) {
+            stream.setName(fromBlk.split("as")[0].trim());
+            stream.setAs(fromBlk.split("as")[1].trim());
+        } else {
+            stream.setName(fromBlk.trim());
+        }
+
+        //filter
+        if (fromBlk.contains("[")) {
+            String filter = fromBlk.split("\\[")[1].split("\\]")[0].trim();
+            stream.setFilter(filter);
+        }
+
+        //window
+        if (fromBlk.contains("#window")) {
+            String windowFunc = fromBlk.split("#window.")[1].split(" ")[0].split("\\(")[0];
+            Window window = new Window();
+            window.setFunc(windowFunc);
+            String windowParams = fromBlk.split("#window.")[1].split("\\(")[1].split("\\)")[0];
+            List<Parameter> paramList = new ArrayList<>();
+            Arrays.asList(windowParams.split(",")).forEach(a -> {
+                paramList.add(new Parameter(a));
+            });
+            window.setParameters(paramList);
+            stream.setWindow(window);
+        }
+    }
+
+    private void appendFrom(String query, StringBuilder sb) {
+
+    }
+
 }

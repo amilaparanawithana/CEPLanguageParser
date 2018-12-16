@@ -2,11 +2,33 @@
 <query>
     <select all="false">
         <attributes>
-            <attribute as="custId">A.customerId</attribute>
-            <attribute as="latency">A.timestamp - B.timestamp</attribute>
+            <attribute>T.roomNo</attribute>
+            <attribute>R.deviceID</attribute>
+            <attribute as="action">'start'</attribute>
         </attributes>
+        <functions/>
     </select>
-    <insertInto>CombinedEvent</insertInto>
-    <filter>A.txnId = B.txnId</filter>
-    <from></from>
+    <from>
+        <streams>
+            <stream>
+                <name>TempStream</name>
+                <window func="time">
+                    <parameters>
+                        <parameter>1 min</parameter>
+                    </parameters>
+                </window>
+                <filter>temp &gt; 30.0</filter>
+            </stream>
+            <stream>
+                <name>RegulatorStream</name>
+                <window func="length">
+                    <parameters>
+                        <parameter>1</parameter>
+                    </parameters>
+                </window>
+                <filter>isOn == false</filter>
+            </stream>
+        </streams>
+    </from>
+    <where>T.roomNo == R.roomNo</where>
 </query>

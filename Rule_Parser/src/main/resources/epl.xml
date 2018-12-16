@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<query>
+    <select all="false">
+        <attributes>
+            <attribute as="custId">A.customerId</attribute>
+            <attribute as="latency">A.timestamp - B.timestamp</attribute>
+        </attributes>
+    </select>
+    <insertInto>CombinedEvent</insertInto>
+    <from>
+        <streams>
+            <stream as="A">
+                <name>EventA</name>
+                <window func="time">
+                    <parameters>
+                        <parameter>30 min</parameter>
+                    </parameters>
+                </window>
+            </stream>
+            <stream as="B">
+                <name>EventB</name>
+                <window func="time">
+                    <parameters>
+                        <parameter>30 min</parameter>
+                    </parameters>
+                </window>
+            </stream>
+        </streams>
+    </from>
+    <where>A.txnId = B.txnId</where>
+</query>

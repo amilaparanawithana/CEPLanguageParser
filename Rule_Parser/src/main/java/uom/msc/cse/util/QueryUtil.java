@@ -115,9 +115,9 @@ public class QueryUtil {
 
     public static StringBuilder setFrom(From from, StringBuilder queryString) {
         queryString.append(QueryKeyWords.FROM).append(QueryKeyWords.SPACE).append(from);
-        if(!from.getAs().isEmpty() || from.getAs() != ""){
+       /* if(!from.getAs().isEmpty() || from.getAs() != ""){
             queryString.append("as ").append(from.getAs());
-        }
+        }*/
         return queryString;
     }
 
@@ -148,7 +148,6 @@ public class QueryUtil {
             }
         });
         String betweenString = getHalf.substring(0,nextFirstBreakIndx[0]);
-        System.out.println(betweenString);
         return betweenString;
     }
 
@@ -164,7 +163,6 @@ public class QueryUtil {
             }
         });
         String betweenString = getHalf.substring(0,nextFirstBreakIndx[0]);
-        System.out.println(betweenString);
         return betweenString;
     }
 
