@@ -1,0 +1,58 @@
+<query>
+    <select>
+        <attributes>
+            <attribute as="attr1as">attribute1</attribute>
+        </attributes>
+        <functions>
+            <function func="funnc" as="maxAs">attribute2</function>
+        </functions>
+    </select>
+
+    <from>
+        <streams>
+            <stream as="st1">
+                <name>stream1</name>
+                <window func="windowFunc">
+                    <parameters>
+                        <parameter>parameter1</parameter>
+                    </parameters>
+                </window>
+            </stream>
+
+            <stream as="st2">
+                <name>stream2</name>
+            </stream>
+        </streams>
+    </from>
+    <where>where_condition</where>
+    <group-by>group_by_variables</group-by>
+    <having>having_condition</having>
+</query>
+
+
+//cql
+        select attribute1 as attr1as, func(attribute2) as maxAs
+        from stream1[windowFunc parameter1] as st1 , stream2 as st2
+        where where_condition
+        group by group_by_variables
+        having having_condition
+
+
+
+//siddhi
+from stream1#window.windowFunc(parameter1) as st1 join stream2 as st2
+        on where_condition
+        select attribute1 as attr1as, func(attribute2) as maxAs
+        group by group_by_variables
+        having having_condition
+
+
+//epl
+select attribute1 as attr1as, func(attribute2) as maxAs
+        from stream1.win:windowFunc(parameter1) as st1, stream2 as st2
+        where where_condition
+        group by group_by_variables
+        having having_condition
+
+
+

@@ -1,5 +1,6 @@
 package uom.msc.cse.impl;
 
+import uom.msc.cse.api.CQLConvertor;
 import uom.msc.cse.api.EsperConverter;
 import uom.msc.cse.api.SiddhiQLConverter;
 
@@ -14,5 +15,9 @@ public class Parser {
 
     public static EsperConverter getEsperConverter() {
         return EsperConverterImpl.getInstance();
+    }
+
+    public static CQLConvertor getStreamConverter() {
+        return CQLConvertorImpl.getInstance();
     }
 }

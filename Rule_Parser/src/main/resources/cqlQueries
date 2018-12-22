@@ -7,3 +7,29 @@ SELECT A.seller , MAX(P.cost)
 FROM Auctions [PARTITION BY A.seller ROWS 10] AS A,
 Purchases AS P
 WHERE A.auction_id = P.auction_id GROUP BY A.seller;
+
+
+Select Rstream(*)
+   From PosSpeedStr [Now]
+   Where speed > 65;
+
+
+Select segNo, dir, hwy
+   From SegSpeedStr [Range 5 Minutes]
+   Group By segNo, dir, hwy
+   Having Avg(speed) < 40;
+
+
+Select segNo, dir, hwy, count(vehicleId) as numVehicles
+   From ActiveVehicleSegRel
+   Group By segNo, dir, hwy
+
+   Select Istream(*)
+         From   S1 [Rows 40,000], S2 [Range 600 Seconds]
+         Where  S1.A = S2.A
+
+         Select S2.name, max(S1.num)
+           From   S1 [Rows 50,000], S2 [Rows 50,000]
+           Where  S1.name <= ’i’ and S1.num = S2.num
+           Group By S2.name
+

@@ -1,0 +1,42 @@
+<query>
+    <select>
+        <attributes>
+            <attribute>roomNo</attribute>
+        </attributes>
+        <functions>
+            <function as="maxTemp" operator="max">temperature</function>
+        </functions>
+    </select>
+    <from>
+        <streams>
+            <stream>
+                <name>tempetarureStream</name>
+                <window func="time">
+                    <parameters>
+                        <parameter>5 min</parameter>
+                    </parameters>
+                </window>
+            </stream>
+        </streams>
+    </from>
+
+    <group-by>roomNo</group-by>
+    <having>temperature > 40</having>
+</query>
+
+
+<query>
+<select all="true"/>
+<from>
+    <streams>
+        <stream>
+            <name>tempetarureStream</name>
+            <window func="time">
+                <parameters>
+                    <parameter>5 min</parameter>
+                </parameters>
+            </window>
+        </stream>
+    </streams>
+</from>
+</query>

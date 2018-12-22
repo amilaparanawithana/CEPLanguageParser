@@ -1,34 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <query>
-    <select all="false">
+    <select>
         <attributes>
-            <attribute>T.roomNo</attribute>
-            <attribute>R.deviceID</attribute>
-            <attribute as="action">'start'</attribute>
+            <attribute as="attr1o">atr1</attribute>
+            <attribute as="attr2o" type="DEFAULT">atr2</attribute>
         </attributes>
-        <functions/>
     </select>
+
     <from>
         <streams>
-            <stream>
-                <name>TempStream</name>
+            <stream as="st1">
+                <name>st1</name>
                 <window func="time">
                     <parameters>
-                        <parameter>1 min</parameter>
+                        <parameter>para1</parameter>
+                        <parameter>para2</parameter>
                     </parameters>
                 </window>
-                <filter>temp &gt; 30.0</filter>
+                <filter>stream condision</filter>
             </stream>
-            <stream>
-                <name>RegulatorStream</name>
+
+            <stream as="st2">
+                <name>st2</name>
                 <window func="length">
                     <parameters>
-                        <parameter>1</parameter>
+                        <parameter>para1</parameter>
                     </parameters>
                 </window>
-                <filter>isOn == false</filter>
+                <filter>stream2condision</filter>
             </stream>
         </streams>
     </from>
-    <where>T.roomNo == R.roomNo</where>
+    <where>whereCondision</where>
 </query>
+
+
+
+

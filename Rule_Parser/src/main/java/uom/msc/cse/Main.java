@@ -18,12 +18,10 @@ public class Main {
                 "  from EventA.win:time(30 min) A, EventB.win:time(30 min) B\n" +
                 " where A.txnId = B.txnId;";*/
 
-        String eplQuery = "insert into CombinedEvent\n" +
-                "select A.customerId as custId, A.timestamp - B.timestamp as latency\n" +
-                "  from EventA.win:time(30 min) A, EventB.win:time(30 min) B\n" +
-                " where A.txnId = B.txnId;";
 
-//        System.out.println(Parser.getSiddiConverter().XMLToSiddhiQL(xmlFile));
+
+
+        // --------------Siddhi -----------------
 //        System.out.println(Parser.getSiddiConverter().XMLToSiddhiQL(xmlFile));
 //        System.out.println(Parser.getSiddiConverter().SiddhiQLToXML("from samplefromstream[condition]#window.time(para1,para2) select atr1 as attr1o , atr2 as attr2o, avg(temp) as avgTemp group by grp1 having having1 insert into insert-stream "));
 //        System.out.println(Parser.getSiddiConverter().SiddhiQLToXML("from TempStream[temp > 30.0]#window.time(1 min) as T\n" +
@@ -32,9 +30,22 @@ public class Main {
 //                "select T.roomNo, R.deviceID, 'start' as action\n" +
 //                "insert into RegulatorActionStream;" ));
 
-        //epl
+        // ------------ ESPER --------------------
+
+        String eplQuery = "insert into CombinedEvent\n" +
+                "select A.customerId as custId, A.timestamp - B.timestamp as latency\n" +
+                "  from EventA.win:time(30 min) A, EventB.win:time(30 min) B\n" +
+                " where A.txnId = B.txnId;";
 //        System.out.println(Parser.getEsperConverter().EPLToXML(eplQuery));
-        System.out.println(Parser.getEsperConverter().XMLToEPL(xmlFile));
+//        System.out.println(Parser.getEsperConverter().XMLToEPL(xmlFile));
+
+
+
+        // ____________ CQL -----------------------
+
+//        xml to cql
+        System.out.println(Parser.getStreamConverter().XMLToCQL(xmlFile));
+
 
 
     }
