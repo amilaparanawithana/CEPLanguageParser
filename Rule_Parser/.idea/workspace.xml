@@ -5,120 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd3e634c-6e8f-4883-a421-35d891b13d91" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cepruleparser-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-10.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-11.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-12.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-13.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-14.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-15.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-16.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-17.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-18.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index-files/index-9.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/overview-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/overview-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/serialized-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/Constants.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/Main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/api/EsperConverter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/api/SiddhiQLConverter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/api/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/api/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/api/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/j.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Attribute.Type.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Attribute.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Condition.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Connection.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Filter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Operation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Parameter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Query.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Querys.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Select.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/Window.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/beans/query/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/exceptions/ParserException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/exceptions/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/exceptions/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/exceptions/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/AbstractConverter.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/EsperConverterImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/Parser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/SiddhiQLConverterImpl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/impl/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/util/QueryKeyWords.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/util/QueryUtil.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/util/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/util/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/javadoc/uom/msc/cse/util/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/queries" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sample2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/api/EsperConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/api/SiddhiQLConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/j.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Attribute$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Attribute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Condition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Connection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Filter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/From.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Function.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Operation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Parameter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Query.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Querys.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Select.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/beans/query/Window.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/exceptions/ParserException$ExType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/exceptions/ParserException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/impl/AbstractConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/impl/EsperConverterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/impl/Parser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/impl/SiddhiQLConverterImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/util/QueryKeyWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/uom/msc/cse/util/QueryUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Querys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sample.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sample.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ss.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ss.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -172,40 +66,48 @@
     <session id="50970252">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cqlQueries" value="2" />
+          <entry key="cqlQueries" value="21" />
           <entry key="gitignore" value="6" />
-          <entry key="java" value="1809" />
-          <entry key="queries" value="4" />
-          <entry key="txt" value="27" />
-          <entry key="xml" value="104" />
+          <entry key="java" value="2634" />
+          <entry key="queries" value="5" />
+          <entry key="txt" value="67" />
+          <entry key="xml" value="658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1809" />
-          <entry key="PLAIN_TEXT" value="39" />
-          <entry key="XML" value="104" />
+          <entry key="JAVA" value="2634" />
+          <entry key="PLAIN_TEXT" value="99" />
+          <entry key="XML" value="658" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cqlQueries" value="1" />
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="12" />
-          <entry key="xml" value="5" />
+          <entry key="eplQueries" value="2" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="1" />
+          <entry key="java" value="33" />
+          <entry key="queries" value="2" />
+          <entry key="query" value="3" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="12" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="5" />
+          <entry key="HTML" value="1" />
+          <entry key="JAVA" value="33" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="UML" value="3" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
     </session>
@@ -213,19 +115,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/EsperConverterImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2580">
-              <caret line="183" selection-start-line="183" selection-end-line="183" />
+            <state relative-caret-position="234">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sample1.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/queries">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="270">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/eplQueries">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -233,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-268">
-              <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+            <state relative-caret-position="-144">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -243,10 +154,44 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
+            <state relative-caret-position="135">
+              <caret line="9" column="35" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/CQLConvertorImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="31" column="26" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/AbstractConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/EsperConverterImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2076">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#701#702#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -254,44 +199,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/epl.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/queries">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-443">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/cqlQueries">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="29">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -299,8 +211,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sample.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="264">
+              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -311,6 +223,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -328,26 +241,32 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cse/beans/query/Filter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Function.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Select.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Parameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Query.java" />
-        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/From.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryKeyWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Stream.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sample2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/queries" />
         <option value="$PROJECT_DIR$/src/main/resources/sample1.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/epl.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/sample.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/EsperConverterImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/cqlQueries" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/api/CQLConvertor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sample2.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/queries" />
+        <option value="$PROJECT_DIR$/src/main/resources/eplQueries" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/CQLConvertorImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/cqlQueries" />
+        <option value="$PROJECT_DIR$/src/main/resources/queryComparison.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/ss.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sample.xml" />
       </list>
     </option>
   </component>
@@ -358,9 +277,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="814" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -392,7 +310,41 @@
               <item name="Rule_Parser" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rule_Parser" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rule_Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rule_Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rule_Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rule_Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cse" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rule_Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rule_Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cse" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Rule_Parser" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Rule_Parser" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -403,7 +355,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544970607694" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546431742914" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -434,7 +386,7 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="uom.msc.cse.Main" />
-      <module name="cepruleparser" />
+      <module name="Rule_Parser" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/resources" />
       <extension name="coverage">
         <pattern>
@@ -463,7 +415,8 @@
       <option name="presentableId" value="Default" />
       <updated>1543661330374</updated>
       <workItem from="1543661347031" duration="42243000" />
-      <workItem from="1544937793541" duration="16706000" />
+      <workItem from="1544937793541" duration="20577000" />
+      <workItem from="1545455383686" duration="14965000" />
     </task>
     <task id="LOCAL-00001" summary="ignore file">
       <created>1544970224342</created>
@@ -479,16 +432,37 @@
       <option name="project" value="LOCAL" />
       <updated>1544970284440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="remove ignore files">
+      <created>1544970587076</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544970587076</updated>
+    </task>
+    <task id="LOCAL-00004" summary="remove ignore files">
+      <created>1544970660909</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544970660909</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CQL query parser impl">
+      <created>1545483027089</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545483027089</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58949000" />
+    <option name="totallyTimeSpent" value="77785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25250357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1881259" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -497,14 +471,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24287485" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2826399" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20322181" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39900866" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.6976456" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23048328" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.46592316" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.20198265" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32855093" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -585,7 +559,9 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="ignore file" />
     <MESSAGE value="conjunction impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="conjunction impl" />
+    <MESSAGE value="remove ignore files" />
+    <MESSAGE value="CQL query parser impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="CQL query parser impl" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -632,8 +608,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/cse/impl/Parser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/cse/api/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cse/impl/package-info.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cse/api/SiddhiQLConverter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/cse/beans/query/Parameter.java" />
@@ -655,20 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="28" column="44" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -694,115 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/uom.msc.cse.beans.query">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>uom.msc.cse.beans.query</OriginalElement>
-          <nodes>
-            <node x="124.0" y="0.0">uom.msc.cse.beans.query.Attribute</node>
-            <node x="13.5" y="315.0">uom.msc.cse.beans.query.Querys</node>
-            <node x="181.0" y="315.0">uom.msc.cse.beans.query.Filter</node>
-            <node x="0.0" y="0.0">uom.msc.cse.beans.query.Function</node>
-            <node x="0.0" y="235.0">uom.msc.cse.beans.query.Connection</node>
-            <node x="153.3125" y="160.0">uom.msc.cse.beans.query.Query</node>
-            <node x="0.0" y="390.0">uom.msc.cse.beans.query.Operation</node>
-            <node x="255.0" y="80.0">uom.msc.cse.beans.query.Window</node>
-            <node x="166.0" y="235.0">uom.msc.cse.beans.query.Condition</node>
-            <node x="249.0" y="0.0">uom.msc.cse.beans.query.Parameter</node>
-            <node x="70.625" y="80.0">uom.msc.cse.beans.query.Select</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="uom.msc.cse.beans.query.Select" target="uom.msc.cse.beans.query.Attribute">
-              <point x="10.875" y="-15.0" />
-              <point x="125.0" y="50.0" />
-              <point x="150.25" y="50.0" />
-              <point x="-26.25" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Querys" target="uom.msc.cse.beans.query.Connection">
-              <point x="23.5" y="-15.0" />
-              <point x="84.0" y="290.0" />
-              <point x="90.75" y="290.0" />
-              <point x="30.25" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Filter" target="uom.msc.cse.beans.query.Condition">
-              <point x="-20.0" y="-15.0" />
-              <point x="201.0" y="290.0" />
-              <point x="193.5" y="290.0" />
-              <point x="-27.5" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Window" target="uom.msc.cse.beans.query.Parameter">
-              <point x="25.0" y="-15.0" />
-              <point x="330.0" y="60.0" />
-              <point x="333.0" y="60.0" />
-              <point x="28.0" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Query" target="uom.msc.cse.beans.query.Window">
-              <point x="10.875" y="-15.0" />
-              <point x="207.6875" y="130.0" />
-              <point x="280.0" y="130.0" />
-              <point x="-25.0" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Select" target="uom.msc.cse.beans.query.Function">
-              <point x="-10.875" y="-15.0" />
-              <point x="103.25" y="50.0" />
-              <point x="78.0" y="50.0" />
-              <point x="26.0" y="15.0" />
-            </edge>
-            <edge source="uom.msc.cse.beans.query.Query" target="uom.msc.cse.beans.query.Select">
-              <point x="-32.625" y="-15.0" />
-              <point x="164.1875" y="140.0" />
-              <point x="92.375" y="140.0" />
-              <point x="-21.75" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="-106.0" y="174.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/api/SiddhiQLConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/AbstractConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Querys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -837,35 +692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Query.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-            <element signature="e#1342#1343#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1502#1503#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/From.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -895,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/api/EsperConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Parameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -916,27 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="136" column="27" selection-start-line="136" selection-start-column="27" selection-end-line="136" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sample1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sample2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="23" column="38" lean-forward="true" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#377#381#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,55 +753,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/api/EsperConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-268">
-          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
+        <state relative-caret-position="264">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="49" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#227#228#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/api/SiddhiQLConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="36" column="73" selection-start-line="36" selection-start-column="73" selection-end-line="36" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/EsperConverterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="183" selection-start-line="183" selection-end-line="183" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/queries">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="96">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/cqlQueries">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/queryComparison.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <caret line="4" column="5" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ss.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/api/CQLConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/javadoc/uom/msc/cse/beans/query/Querys.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Querys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/uom.msc.cse.beans.query">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>uom.msc.cse.beans.query</OriginalElement>
+          <nodes>
+            <node x="246.5" y="160.0">uom.msc.cse.beans.query.Attribute</node>
+            <node x="15.5" y="240.0">uom.msc.cse.beans.query.From</node>
+            <node x="9.5" y="160.0">uom.msc.cse.beans.query.Stream</node>
+            <node x="411.5" y="80.0">uom.msc.cse.beans.query.Filter</node>
+            <node x="122.5" y="160.0">uom.msc.cse.beans.query.Function</node>
+            <node x="113.1875" y="320.0">uom.msc.cse.beans.query.Query</node>
+            <node x="0.0" y="395.0">uom.msc.cse.beans.query.Operation</node>
+            <node x="6.0" y="80.0">uom.msc.cse.beans.query.Window</node>
+            <node x="396.5" y="0.0">uom.msc.cse.beans.query.Condition</node>
+            <node x="0.0" y="0.0">uom.msc.cse.beans.query.Parameter</node>
+            <node x="193.125" y="240.0">uom.msc.cse.beans.query.Select</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="uom.msc.cse.beans.query.Select" target="uom.msc.cse.beans.query.Attribute">
+              <point x="10.875" y="-15.0" />
+              <point x="247.5" y="210.0" />
+              <point x="272.75" y="210.0" />
+              <point x="-26.25" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.From" target="uom.msc.cse.beans.query.Stream">
+              <point x="-20.25" y="-15.0" />
+              <point x="35.75" y="220.0" />
+              <point x="32.75" y="220.0" />
+              <point x="-23.25" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Stream" target="uom.msc.cse.beans.query.Window">
+              <point x="-23.25" y="-15.0" />
+              <point x="32.75" y="135.0" />
+              <point x="31.0" y="135.0" />
+              <point x="-25.0" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Filter" target="uom.msc.cse.beans.query.Condition">
+              <point x="20.0" y="-15.0" />
+              <point x="471.5" y="55.0" />
+              <point x="479.0" y="55.0" />
+              <point x="27.5" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Window" target="uom.msc.cse.beans.query.Parameter">
+              <point x="25.0" y="-15.0" />
+              <point x="81.0" y="55.0" />
+              <point x="84.0" y="55.0" />
+              <point x="28.0" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Query" target="uom.msc.cse.beans.query.From">
+              <point x="-32.625" y="-15.0" />
+              <point x="124.0625" y="300.0" />
+              <point x="35.75" y="300.0" />
+              <point x="-20.25" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Select" target="uom.msc.cse.beans.query.Function">
+              <point x="-10.875" y="-15.0" />
+              <point x="225.75" y="210.0" />
+              <point x="200.5" y="210.0" />
+              <point x="26.0" y="15.0" />
+            </edge>
+            <edge source="uom.msc.cse.beans.query.Query" target="uom.msc.cse.beans.query.Select">
+              <point x="10.875" y="-15.0" />
+              <point x="167.5625" y="290.0" />
+              <point x="214.875" y="290.0" />
+              <point x="-21.75" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-158.0" y="189.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/beans/query/Query.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/EsperConverterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2076">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding>
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/CQLConvertorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="31" column="26" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/AbstractConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/util/QueryUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/impl/SiddhiQLConverterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sample.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/uom/msc/cse/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/queries">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/eplQueries">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="22" selection-end-column="31" />
         </state>
       </provider>
     </entry>

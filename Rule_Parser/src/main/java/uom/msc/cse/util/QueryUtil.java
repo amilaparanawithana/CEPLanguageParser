@@ -1,7 +1,5 @@
 package uom.msc.cse.util;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import uom.msc.cse.beans.query.From;
 import uom.msc.cse.beans.query.Query;
 import uom.msc.cse.beans.query.Select;
@@ -20,7 +18,6 @@ import java.io.StringWriter;
  */
 public class QueryUtil {
 
-    private static final Logger logger = LogManager.getLogger(QueryUtil.class);
 
     public static Query convertXMLFileToBean(File xmlFile) throws ParserException {
 
@@ -29,10 +26,7 @@ public class QueryUtil {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Query) jaxbUnmarshaller.unmarshal(xmlFile);
         } catch (JAXBException e) {
-            logger.error("Error while converting the XML file content to JAXB model");
-            if (logger.isDebugEnabled()) {
-                logger.debug("Error in converting XML string : {} to JAXB object", xmlFile.getName());
-            }
+
             throw new ParserException("Error while converting the XML file content to JAXB model", e);
         }
     }
@@ -45,10 +39,7 @@ public class QueryUtil {
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
             return (Query) jaxbUnmarshaller.unmarshal(reader);
         } catch (JAXBException e) {
-            logger.error("Error while converting XML to JAXB object");
-            if (logger.isDebugEnabled()) {
-                logger.debug("Error in converting XML string : {} to JAXB object", xml);
-            }
+
             throw new ParserException("Error while converting XML to JAXB object", e);
         }
     }
@@ -61,7 +52,6 @@ public class QueryUtil {
             jaxbMarshaller.marshal(query,sw);
             return sw.toString();
         } catch (JAXBException e) {
-            logger.error("Error while converting Query object to XML");
             throw new ParserException("Error while converting Query to XML", e);
         }
     }

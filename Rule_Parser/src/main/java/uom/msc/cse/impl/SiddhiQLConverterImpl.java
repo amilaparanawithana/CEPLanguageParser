@@ -1,7 +1,5 @@
 package uom.msc.cse.impl;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import uom.msc.cse.api.SiddhiQLConverter;
 import uom.msc.cse.beans.query.*;
 import uom.msc.cse.exceptions.ParserException;
@@ -21,7 +19,6 @@ import java.util.List;
  */
 public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQLConverter {
 
-    private static final Logger logger = LogManager.getLogger(SiddhiQLConverterImpl.class);
     private static SiddhiQLConverterImpl ourInstance = new SiddhiQLConverterImpl();
 
     public static SiddhiQLConverterImpl getInstance() {
@@ -40,7 +37,6 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
      */
     public String XMLToSiddhiQL(String xml) throws ParserException {
         String query = "";
-        logger.info("Converting the XML to SiddhiQL query..");
         Query queryObj = QueryUtil.convertXMLStringToBean(xml);
         query = createSQLWithQuery(queryObj);
         return query;
@@ -57,7 +53,6 @@ public class SiddhiQLConverterImpl extends AbstractConverter implements SiddhiQL
         String query = "";
         //TODO validate the incoming xml request over a XSD
         //validateXML();
-        logger.info("Converting the XML to SiddhiQL query..");
         Query queryObj = QueryUtil.convertXMLFileToBean(xmlFile);
         query = createSQLWithQuery(queryObj);
         return query;

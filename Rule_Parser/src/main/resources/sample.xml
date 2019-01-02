@@ -20,7 +20,7 @@
                         <parameter>para2</parameter>
                     </parameters>
                 </window>
-                <!--<filter>stream condision</filter>-->
+                <filter>stream1condision</filter>
             </stream>
 
             <stream as="st2">
@@ -30,7 +30,7 @@
                         <parameter>para1</parameter>
                     </parameters>
                 </window>
-                <!--<filter>stream2condision</filter>-->
+                <filter>stream2condision</filter>
             </stream>
         </streams>
     </from>
@@ -39,7 +39,5 @@
     <having>having1</having>
     <insertInto>insert-stream</insertInto>
 </query>
-
-
 
 
